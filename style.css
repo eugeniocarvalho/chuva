@@ -49,3 +49,39 @@ header img {
   padding: 0.8rem;
   text-decoration: none;
 }
+main {
+  font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+  display: flex;
+  border-top: 2px solid #E7E7E7;
+  font-family: 'Quicksand', sans-serif;
+}
+
+footer img {
+  height: 5.937rem;
+}
+
+footer a {
+  background-color: #71488d;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div p {
+  margin: 15px 13rem 10px 20px;
+}
+
+footer div p strong {
+  font-weight: 700;
+}
