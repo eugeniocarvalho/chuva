@@ -95,7 +95,7 @@ header img {
 }
 
 .border__style {
-  border: 2px solid #cccccc;
+  border: 2px solid #ececec;
 }
 
 .cabecalho__lang__conteudo img {
@@ -188,7 +188,7 @@ main {
   background-color: #fdf1eb;
   color: #4e4e4e;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 1rem;
   border-radius: 3px;
 }
@@ -268,13 +268,61 @@ main {
   position: relative;
 }
 
+.discussoes__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discussoes__form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.discussoes__form label {
+  color: #ed7839;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.discussao__dados {
+  padding: 1rem;
+}
+
+.editor__texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaf1f2;
+}
+
+.editor__texto img {
+  margin-left: 2rem;
+}
+
+.editor__texto .enviar__topico {
+  padding: 0;
+  border: none;
+  background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
+  color: white;
+  border-radius: 0px 0px 4px 0px;
+  padding: 0.625rem 6rem;
+  cursor: pointer;
+}
+
+.discussoes__form {
+  display: none;
+}
+
 .discussoes h3 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 1.375rem;
   line-height: 21px;
-  color: #ED7839;
+  color: #ed7839;
 }
 
 .discussoes p {
@@ -285,46 +333,119 @@ main {
 }
 
 .discussoes__icones {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .discussoes__icones img {
   margin: 0 1rem;
 }
 
-.criar__topico {
+.criar__topico__botao {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 0.3rem 1rem;
   background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
   border-radius: 4px;
   position: relative;
   cursor: pointer;
 }
 
-.criar__topico span {
+.criar__topico {
   margin-left: 8px;
   color: white;
   font-family: "Quicksand";
   font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .criar__topico:before {
-  content: '';
-  width: 77vw;
+  content: "";
+  width: 86rem;
   height: 1px;
-  background: #E7E7E7;
+  background: #e7e7e7;
   position: absolute;
-  top: 26px;
-  left: -292%;
+  top: 1.2rem;
+  left: -39rem;
   right: 0;
   z-index: -1;
 }
 
+.novo__topico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.novo__topico h4 {
+  color: #ed7839;
+  margin: 1rem 0 2rem 0;
+}
+
+.novo__topico a {
+  color: #ed7839
+}
+
+.novo__topico .criar__novo__topico {
+  margin: 1rem 0;
+  padding: 0.3rem 3rem;
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  color: white;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.criar__novo__topico:before {
+  content: "";
+  width: 86rem;
+  height: 1px;
+  background: #e7e7e7;
+  position: absolute;
+  top: 1.2rem;
+  left: -39rem;
+  right: 0;
+  z-index: -1;
+}
+
+.caixa__blur {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+}
+
+.editar__topico {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 11%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.editar__topico img {
+  height: 3rem;
+}
+
+.conteudo__novo__topico {
+  display: none;
+}
+
+.assunto__conteudo__completo {
+  display: none;
+}
+
 .assunto__conteudo {
   margin-top: 1rem;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
-  padding: 1rem;
+  padding: 1rem 1rem 0;
 }
 
 .assunto__conteudo p {
@@ -335,6 +456,43 @@ main {
   display: flex;
   width: 180px;
   justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.discussao__lista {
+  margin-top: 1rem;
+}
+
+.discussao__card:nth-of-type(odd) {
+  background: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  padding: 0 1rem;
+  margin: 0 -1rem;
+}
+
+.discussao__card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.discussao__autor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.discussao__autor h4 {
+  font-weight: 600;
+}
+
+.discussao__autor span {
+  font-family: "Quicksand";
+  color: #ed7839;
+  font-weight: 600;
+  margin-right: 2rem;
 }
 
 footer {
