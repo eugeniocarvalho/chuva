@@ -571,11 +571,6 @@ footer div p {
 
 
 @media screen and (max-width: 650px) {
-  main .container {
-    margin: 1rem 0;
-    padding: 1rem 0;
-  }
-
   header {
     float: initial;
     position: initial;

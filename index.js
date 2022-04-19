@@ -30,7 +30,7 @@ document.addEventListener('click', e => {
     discussao.style.display = 'block'
   }
 
-  if (el.includes('criar__topico')) {
+  if (el.includes('criar__topico__botao')) {
     discussaoForm.style.display = 'flex';
     discussoes.style.display = 'none';
     criarTopico.style.display = 'none';
