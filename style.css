@@ -57,10 +57,26 @@ header img {
   border-bottom: 2px solid #e7e7e7;
 }
 
+.nav__ativo {
+  background: #fdf1eb;
+  border-left: 0.312rem solid;
+  border-image: linear-gradient(#ffb455, #ed7839) 0 100%;
+}
+
+.navegacao .nav__ativo a {
+  margin-left: 0.5rem;
+}
+
 .navegacao a {
   margin-left: 1rem;
   padding: 0.8rem;
   text-decoration: none;
+  color: #725c5c;
+}
+
+main {
+  font-family: "Quicksand", sans-serif;
+  padding-left: 1rem;
 }
 
 .cabecalho {
@@ -91,7 +107,7 @@ header img {
   align-items: center;
   border: 2px solid #cccccc;
   border-radius: 3px;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .border__style {
@@ -120,23 +136,23 @@ header img {
   color: white;
   font-weight: 700;
   position: relative;
-  height: 20px;
+  height: 1.5rem;
   right: 0.935rem;
   border-radius: 50%;
   font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 37px;
+  width: 1.6rem;
+}
+
+.cabecalho__profile img {
+  height: 3rem;
+  width: 3rem;
 }
 
 .cabecalho__profile p {
   margin-right: 1rem;
-}
-
-main {
-  font-family: "Quicksand", sans-serif;
-  padding-left: 1rem;
 }
 
 .titulo {
@@ -177,6 +193,10 @@ main {
 }
 
 .detalhes__botoes .link__text {
+  color: #ED7839;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
   margin: 0.7rem 0;
 }
 
@@ -194,7 +214,7 @@ main {
 }
 
 .detalhes__box {
-  height: 510px;
+  height: 31.875rem;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -214,7 +234,7 @@ main {
 }
 
 .detalhes__box p {
-  margin: 10px 0;
+  margin: 0.615rem 0;
 }
 
 .autores {
@@ -321,12 +341,12 @@ main {
   font-style: normal;
   font-weight: 700;
   font-size: 1.375rem;
-  line-height: 21px;
+  line-height: 1.312rem;
   color: #ed7839;
 }
 
 .discussoes p {
-  line-height: 19px;
+  line-height: 1.187rem;
   width: 80%;
   text-align: center;
   margin-bottom: 1rem;
@@ -359,12 +379,12 @@ main {
 
 .criar__topico:before {
   content: "";
-  width: 86rem;
+  width: 723%;
   height: 1px;
   background: #e7e7e7;
   position: absolute;
   top: 1.2rem;
-  left: -39rem;
+  left: -313%;
   right: 0;
   z-index: -1;
 }
@@ -382,7 +402,7 @@ main {
 }
 
 .novo__topico a {
-  color: #ed7839
+  color: #ed7839;
 }
 
 .novo__topico .criar__novo__topico {
@@ -400,12 +420,12 @@ main {
 
 .criar__novo__topico:before {
   content: "";
-  width: 86rem;
+  width: 723%;
   height: 1px;
   background: #e7e7e7;
   position: absolute;
   top: 1.2rem;
-  left: -39rem;
+  left: -313%;
   right: 0;
   z-index: -1;
 }
@@ -421,6 +441,7 @@ main {
 }
 
 .editar__topico {
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -442,6 +463,7 @@ main {
 }
 
 .assunto__conteudo {
+  width: 95%;
   margin-top: 1rem;
   border: 1px solid #e7e7e7;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
@@ -454,7 +476,7 @@ main {
 
 .assunto__opcoes {
   display: flex;
-  width: 180px;
+  width: 11.25rem;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
@@ -526,5 +548,87 @@ footer div {
 }
 
 footer div p {
-  margin: 15px 13rem 10px 20px;
+  margin: 0.9rem 13rem 0.625rem 1.25rem;
+}
+
+@media screen and (max-width: 650px) {
+  main .container {
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+
+  header {
+    float: initial;
+    position: initial;
+    z-index: 1;
+    overflow-x: initial;
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  main .cabecalho {
+    margin: 0rem 0 0 -1rem;
+  }
+
+  main .cabecalho__text {
+    margin: 1rem;
+  }
+
+  .cabecalho, .video__conteudo, .caixa, footer {
+    margin-left: 0;
+  }
+
+  .cabecalho__lang__conteudo, .cabecalho__profile {
+    display: none;
+  }
+
+  .video__detalhes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detalhes__botoes {
+    width: 90%;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer a {
+    align-self: center;
+    text-align: center;
+    width: 70%;
+  }
+
+  footer div p {
+    margin: 1rem;
+  }
+
+  .criar__topico:before {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .video__detalhes {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detalhes__botoes {
+    width: 50%;
+    align-items: center;
+    margin-left: 13rem;
+    margin-top: 2rem;
+  }
+
+  .criar__topico:before {
+    width: 90%;
+  }
 }

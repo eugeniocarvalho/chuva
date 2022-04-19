@@ -1,6 +1,6 @@
 const resumido = document.getElementsByClassName('texto__resumido')[0];
 const completo = document.getElementsByClassName('texto__completo')[0];
-const discussao = document.getElementsByClassName('assunto__conteudo')[0];
+const discussao = document.getElementsByClassName('assunto__conteudo')[3];
 const discussaoCompleta = document.getElementsByClassName('assunto__conteudo__completo')[0];
 const discussoes = document.getElementsByClassName('discussoes__criar__topico')[0];
 const criarTopico = document.getElementsByClassName('criar__topico__botao')[0];
